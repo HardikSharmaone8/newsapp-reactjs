@@ -10,7 +10,7 @@ export class NewsApi extends Component {
       <div className="card" style={{ width: "18rem" }}>
         <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
           {source}
-          <span class="visually-hidden">unread messages</span>
+          <span className="visually-hidden">unread messages</span>
         </span>
         <img src={image} className="card-img-top" alt="..." />
         <div className="card-body">

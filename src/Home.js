@@ -85,6 +85,7 @@ export class Home extends Component {
             Times Of News - Top {this.props.query} Headlines
           </h1>
         </center>
+
         <InfiniteScroll
           dataLength={this.state.page}
           next={() => this.fetchMoreData(1)}
@@ -115,25 +116,6 @@ export class Home extends Component {
             })}
           </div>
         </InfiniteScroll>
-        {/* <center>
-          <button
-            style={{ marginTop: "20px" }}
-            type="button"
-            className="btn btn-primary"
-            onClick={() => this.next_prev(-1)}
-          >
-            &larr; Previous
-          </button>
-
-          <button
-            style={{ marginTop: "20px", marginLeft: "20px" }}
-            type="button"
-            className="btn btn-primary"
-            onClick={() => this.next_prev(1)}
-          >
-            Next &rarr;
-          </button>
-        </center> */}
       </>
     );
   }
